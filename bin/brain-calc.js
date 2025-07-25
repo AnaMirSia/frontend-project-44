@@ -21,7 +21,7 @@ const calcGame = () => {
         const example = `${randomNumber1} ${operators[index]} ${randomNumber2}`
         console.log(`Question: ${example}`);
         const answer = readlineSync.question('You answer: ');
-        const result = eval(example)
+        const result = new Function(`return ${example}`)()
 
         if(result === Number(answer)){
             console.log('Correct!')
