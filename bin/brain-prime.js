@@ -32,7 +32,7 @@ const primeGame = () => {
         console.log('Correct!')
     } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isPrime(randomNumber)}'`);
-        console.log(`Lets try agan, ${name}!`);
+        console.log(`Let's try agan, ${name}!`);
         return
     }
 }

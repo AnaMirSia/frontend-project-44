@@ -23,7 +23,7 @@ const roundGame = () => {
         console.log('Correct!')
     } else {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'`);
-        console.log(`Lets try agan, ${name}!`);
+        console.log(`Let's try agan, ${name}!`);
         return
     }
 }
