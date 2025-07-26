@@ -1,6 +1,6 @@
-import js from "@eslint/js";
-import globals from "globals";
-import { defineConfig } from "eslint/config";
+import js from "@eslint/js"
+import globals from "globals"
+import { defineConfig } from "eslint/config"
 
 
 export default defineConfig([
@@ -8,7 +8,7 @@ export default defineConfig([
   { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.browser } },
   {
     rules: {
-      semi: "error",
+      "semi": ["error", "never"],
       "prefer-const": "error",
       "no-multiple-empty-lines": "off",
       "indent": ["error", 2],
@@ -29,4 +29,4 @@ export default defineConfig([
       ]
     },
   },
-]);
+])
