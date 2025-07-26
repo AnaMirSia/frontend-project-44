@@ -6,6 +6,3 @@ export function Username() {
   console.log(`Hello, ${name}`)
   return name
 }
-   
-
-

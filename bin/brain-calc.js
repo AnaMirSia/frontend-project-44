@@ -3,7 +3,6 @@
 import readlineSync from 'readline-sync'
 
 const calcGame = () => {
-
   console.log('Welcome to the Brain Games!')
   const name = readlineSync.question('May I have your name? ')
   console.log(`Hello, ${name}`)
@@ -15,7 +14,7 @@ const calcGame = () => {
 
     const randomNumber1 = Math.floor(Math.random() * 15) + 1
     const randomNumber2 = Math.floor(Math.random() * 10) + 1
-        
+
     const example = `${randomNumber1} ${operators[index]} ${randomNumber2}`
     console.log(`Question: ${example}`)
     const answer = readlineSync.question('You answer: ')
@@ -28,7 +27,6 @@ const calcGame = () => {
       console.log(`Let's try again, ${name}!`)
       return
     }
-
   }
   console.log(`Congratulations, ${name}!`)
 }
