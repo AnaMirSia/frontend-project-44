@@ -24,14 +24,15 @@ const progressionGame = () => {
         Value: result,
       }
     }
-    const {progression, Value} = arrProgression()
+    const { progression, Value } = arrProgression()
 
     console.log(`Question: ${progression}`)
     const answer = readlineSync.question('You answer: ')
 
     if (Value === Number(answer)) {
       console.log('Correct!')
-    } else {
+    }
+    else {
       console.log(`${answer} is wrong answer ;(. Correct answer was '${Value}'`)
       console.log(`Let's try again, ${name}!`)
       return

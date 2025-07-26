@@ -1,4 +1,3 @@
-
 import readlineSync from 'readline-sync'
 // в этом коде не выводится имя игрока
 const greeting = () => {
@@ -19,4 +18,4 @@ const loss = (name) => {
   console.log(`Let's try again, ${name}!`)
 }
 
-export {greeting, userName, winning, loss}
+export { greeting, userName, winning, loss }

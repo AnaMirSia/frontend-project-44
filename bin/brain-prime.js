@@ -11,7 +11,8 @@ const isPrime = (number) => {
   }
   if (arr.length === 2) {
     return 'yes'
-  } else {
+  }
+  else {
     return 'no'
   }
 }
@@ -29,7 +30,8 @@ const primeGame = () => {
 
     if (answer === isPrime(randomNumber)) {
       console.log('Correct!')
-    } else {
+    }
+    else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isPrime(randomNumber)}'`)
       console.log(`Let's try again, ${name}!`)
       return

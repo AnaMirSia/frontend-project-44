@@ -15,18 +15,18 @@ export default defineConfig([
       'eol-last': 'error',
       'no-unused-vars': 'warn',
       'comma-dangle': ['error', 'always-multiline'],
-      'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 1 }],
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
       'indent': ['error', 2],
-      'space-infix-ops': ['error', { 'int32Hint': false }],
+      'space-infix-ops': ['error', { int32Hint: false }],
       'keyword-spacing': ['error', {
-        'before': true,
-        'after': true,
+        before: true,
+        after: true,
       }],
       'operator-linebreak': [
         'error',
         'before',
         {
-          'overrides': {
+          overrides: {
             '{': 'before',
           },
         },

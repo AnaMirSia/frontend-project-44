@@ -27,7 +27,8 @@ const gcdGame = () => {
 
     if (nod(a, b) === Number(answer)) {
       console.log('Correct!')
-    } else {
+    }
+    else {
       console.log(`${answer} is wrong answer ;(. Correct answer was '${nod(a, b)}'`)
       console.log(`Let's try again, ${name}!`)
       return

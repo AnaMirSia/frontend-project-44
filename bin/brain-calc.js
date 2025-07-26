@@ -22,7 +22,8 @@ const calcGame = () => {
 
     if (result === Number(answer)) {
       console.log('Correct!')
-    } else {
+    }
+    else {
       console.log(`${answer} is wrong answer ;(. Correct answer was '${result}'`)
       console.log(`Let's try again, ${name}!`)
       return
