@@ -1,21 +1,24 @@
 import readlineSync from 'readline-sync'
-// в этом коде не выводится имя игрока
-const greeting = () => {
-  console.log('Welcome to the Brain Games!')
-}
 
-const userName = () => {
+const greeting = (description, game) => {
+  console.log('Welcome to the Brain Games!')
   const name = readlineSync.question('May I have your name? ')
   console.log(`Hello, ${name}`)
-  return name
-}
+  console.log(description)
 
-const winning = (name) => {
+  for (let i = 0; i < 3; i += 1) {
+    const {result, answer} = game()
+
+    if (result === answer) {
+      console.log('Correct!')
+    }
+    else {
+      console.log(`${answer} is wrong answer ;(. Correct answer was '${result}'`)
+      console.log(`Let's try again, ${name}!`)
+      return
+    }
+  }
   console.log(`Congratulations, ${name}!`)
 }
 
-const loss = (name) => {
-  console.log(`Let's try again, ${name}!`)
-}
-
-export { greeting, userName, winning, loss }
+export {greeting}
