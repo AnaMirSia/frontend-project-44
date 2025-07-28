@@ -13,4 +13,3 @@ export const evenGame = () => {
   const result = isEven(randomNumber1) ? 'yes' : 'no'
   return { result, answer }
 }
-

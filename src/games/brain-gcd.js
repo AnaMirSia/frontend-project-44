@@ -24,4 +24,3 @@ export const gcdGame = () => {
   const result = nod(a, b)
   return { result, answer }
 }
-

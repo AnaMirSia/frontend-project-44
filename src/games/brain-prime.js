@@ -24,6 +24,5 @@ export const primeGame = () => {
   console.log(`Question: ${randomNumber}`)
   const answer = readlineSync.question('You answer: ')
   const result = isPrime(randomNumber)
-  return {result, answer}
+  return { result, answer }
 }
-

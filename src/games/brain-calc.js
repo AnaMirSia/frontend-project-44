@@ -13,4 +13,3 @@ export function calcGame() {
   const result = new Function(`return ${example}`)()
   return { result, answer }
 }
-

@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync'
 
-const greeting = (description, game) => {
+export const greeting = (description, game) => {
   console.log('Welcome to the Brain Games!')
   const name = readlineSync.question('May I have your name? ')
   console.log(`Hello, ${name}`)
   console.log(description)
 
   for (let i = 0; i < 3; i += 1) {
-    const {result, answer} = game()
+    const { result, answer } = game()
 
     if (result === answer) {
       console.log('Correct!')
@@ -20,5 +20,3 @@ const greeting = (description, game) => {
   }
   console.log(`Congratulations, ${name}!`)
 }
-
-export {greeting}

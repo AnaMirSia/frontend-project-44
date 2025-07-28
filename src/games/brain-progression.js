@@ -25,6 +25,5 @@ export const progressionGame = () => {
   console.log(`Question: ${progression}`)
   const answer = Number(readlineSync.question('You answer: '))
 
-  return  {result, answer}
+  return { result, answer }
 }
-
